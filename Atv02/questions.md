@@ -79,5 +79,9 @@ print("Nomes das pessoas com mais de 25 anos:", nomes_maiores_25)
 ### Utilizando pandas, como lidar com valores ausentes (NaN) em um DataFrame?
 
 Existem várias estratégias, e a escolha da melhor depende do contexto dos dados e do objetivo da análise.
-`df.isnull()` retorna um DataFrame booleano do mesmo, indicando `True` onde há um NaN e `False` onde não há.
+ - `df.isnull()` retorna um DataFrame booleano do mesmo, indicando `True` onde há um NaN e `False` onde não há.
+ - `df.dropna()` remove as linhas que contêm pelo menos um valor NaN
+ - `df.fillna(valor)` preenche todos os NaNs com um valor específico 
+
+
 
